@@ -1,0 +1,33 @@
+[
+    {
+      "nombre": "Pepito",
+      "direccion": "Quito",
+      "edad": "28"
+    },
+    {
+      "nombre": "María",
+      "direccion": "Guayaquil",
+      "edad": "30"
+    },
+    {
+      "nombre": "Juan",
+      "direccion": "Cuenca",
+      "edad": "22"
+    },
+    {
+      "nombre": "Rosa",
+      "direccion": "Loja",
+      "edad": "25"
+    },
+    {
+      "nombre": "Carlos",
+      "direccion": "Manta",
+      "edad": "40"
+    },
+    {
+      "nombre": "Luisa",
+      "direccion": "Ambato",
+      "edad": "35"
+    }
+  ]
+  

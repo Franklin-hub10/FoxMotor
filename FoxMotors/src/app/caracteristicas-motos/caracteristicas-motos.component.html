@@ -1,0 +1,48 @@
+<section class="motos-catalogo">
+    <br><br>
+    <div class="cards-grid">
+      @for (moto of motos; track $index) {
+        <div class="card">
+          <!-- Imagen de la moto -->
+          <img src="{{ moto.imagen }}" alt="Imagen de {{ moto.marca }} {{ moto.modelo }}" class="card-img" />
+          <!-- Contenido de la card -->
+          <div class="card-body">
+            <h3 class="card-title">{{ moto.marca }} {{ moto.modelo }}</h3>
+            <p class="card-price">
+              <span>{{ moto.precio_aproximado | currency:'USD' }}</span>
+            </p>
+            <button class="card-btn" (click)="openModal(moto)">Ver detalles</button>
+          </div>
+        </div>
+      } @empty {
+        <p>No hay motos disponibles.</p>
+      }
+    </div>
+  </section>
+  
+<!-- Modal: se muestra cuando hay una moto seleccionada -->
+<div class="modal-overlay" *ngIf="selectedMoto">
+    <div class="modal">
+      <button class="modal-close" (click)="closeModal()">X</button>
+      <div class="modal-content">
+        <!-- Contenedor de la imagen -->
+        <div class="modal-img-container">
+          <img src="{{ selectedMoto.imagen }}" alt="Imagen de {{ selectedMoto.marca }} {{ selectedMoto.modelo }}" class="modal-img" />
+        </div>
+        <!-- Contenedor de los detalles -->
+        <div class="modal-details">
+          <h2>{{ selectedMoto.marca }} {{ selectedMoto.modelo }}</h2>
+          <p>
+            <strong>Cilindraje:</strong> {{ selectedMoto.cilindraje }}<br/>
+            <strong>Tipo:</strong> {{ selectedMoto.tipo }}
+          </p>
+          <p>
+            Mensaje general para todos: ¡Bienvenido a Fox Motors, tu destino para encontrar las mejores motocicletas!
+          </p>
+          <button class="purchase-btn">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,51 @@
+/* Contenedor general de la página de error */
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ocupa la mayor parte de la pantalla */
+    text-align: center;
+    background-color: #f8fafc; /* Fondo gris claro */
+    color: #374151; /* Texto gris oscuro */
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  /* Título principal (h1) */
+  .not-found-container h1 {
+    font-size: 3rem;       /* Tamaño grande para destacar */
+    margin-bottom: 1rem;   /* Espacio debajo */
+    color: #1f2937;        /* Gris aún más oscuro */
+  }
+  
+  /* Subtítulo (h2) */
+  .not-found-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6b7280;
+  }
+  
+  /* Texto del mensaje */
+  .not-found-container p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Botón (opcional) para redirigir al Home o donde desees */
+  .back-home-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #1d4ed8;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-home-btn:hover {
+    background-color: #1e40af;
+  }
+  

@@ -1,0 +1,131 @@
+/* ============ Contenedor General ============ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  /* ============ Sección About Intro ============ */
+  .about-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+  
+  .about-intro p {
+    font-size: 1.125rem;
+    color: #4b5563;
+  }
+  
+  /* ============ Sección About Info ============ */
+  .about-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+    text-align: left;
+  }
+  
+  .info-block {
+    flex: 1 1 300px;
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-block h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #1d4ed8;
+  }
+  
+  .info-block p,
+  .info-block ul {
+    font-size: 1rem;
+    color: #374151;
+  }
+  
+  .info-block ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
+  
+  /* ============ Sección del Carrusel ============ */
+  /* Sección del carrusel */
+.carousel-section {
+    margin-top: 3rem;
+  }
+  
+  .carousel-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+  
+  /* Contenedor general del carrusel */
+  .carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Quitamos la altura fija para evitar escalados excesivos */
+    /* height: 50vh; */
+  }
+  
+  /* Contenedor de la imagen del carrusel */
+  .carousel-image-container {
+    position: relative;
+    /* Dejamos que el contenedor se ajuste automáticamente a la imagen */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Imagen del carrusel */
+  .carousel-img {
+    width: 100%;
+    height: auto;         /* Se ajusta según la proporción original de la imagen */
+    max-height: 300px;    
+    object-fit: contain;  
+  }
+  
+  /* Leyenda sobre la imagen */
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  
+  /* Controles del carrusel */
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Botones generales */
+  .btn {
+    padding: 0.5rem 1rem;
+    background-color: #1d4ed8;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #1e40af;
+  }
+  
+  

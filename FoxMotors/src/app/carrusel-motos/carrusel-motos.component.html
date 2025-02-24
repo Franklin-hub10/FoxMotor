@@ -1,0 +1,57 @@
+<br><br><br>
+
+<!-- Carrusel de motos -->
+<section class="carousel-section">
+  <h2>Nuestros Destacados</h2>
+  <div class="carousel" *ngIf="motos.length > 0">
+    <div class="carousel-image-container">
+      <img [src]="motos[currentIndex].imagen || 'assets/default-moto.jpg'" 
+           alt="Slide {{ currentIndex + 1 }}" class="carousel-img">
+      <div class="carousel-caption">
+        <h3>{{ motos[currentIndex].marca }} {{ motos[currentIndex].modelo }}</h3>
+        <p>{{ motos[currentIndex].precio_aproximado | currency:'USD' }}</p>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="btn" (click)="prev()">Anterior</button>
+      <button class="btn" (click)="next()">Siguiente</button>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de introducción / Nosotros -->
+<section class="about-intro">
+  <div class="container">
+    <h1>Sobre Fox Motors</h1>
+    <p>
+      En Fox Motors, nos apasiona la libertad y la aventura sobre dos ruedas. Somos un equipo comprometido a ofrecer las mejores motocicletas, combinando innovación, calidad y una experiencia de cliente inigualable.
+    </p>
+  </div>
+</section>
+
+<!-- Sección de Misión, Visión y Valores -->
+<section class="about-info">
+  <div class="container">
+    <div class="info-block">
+      <h2>Misión</h2>
+      <p>
+        Nuestra misión es proporcionar a nuestros clientes motocicletas de alta calidad que inspiren libertad y superación, acompañadas de un servicio excepcional y asesoría personalizada.
+      </p>
+    </div>
+    <div class="info-block">
+      <h2>Visión</h2>
+      <p>
+        Ser la marca líder en el mercado de motocicletas, reconocida por la innovación, la pasión y la confianza que transmitimos en cada experiencia de conducción.
+      </p>
+    </div>
+    <div class="info-block">
+      <h2>Valores</h2>
+      <ul>
+        <li>Pasión por la excelencia</li>
+        <li>Compromiso con el cliente</li>
+        <li>Innovación y creatividad</li>
+        <li>Trabajo en equipo y responsabilidad</li>
+      </ul>
+    </div>
+  </div>
+</section>
